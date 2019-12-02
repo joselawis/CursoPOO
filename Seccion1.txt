@@ -1,0 +1,61 @@
+Objetos y Clases
+- Un objeto es una instancia de una clase
+- Una clase es una plantilla para la creación de objeto
+- Una clase define un tipo de dato personalizado que define data y comportamiento
+- Los miembros de la clase son todos los elementos de la clase: propiedades, metodos, atributos
+
+- Propiedades: tienen get y set
+- Campo: no tiene get-set
+
+POO
+- Paradigma de programación
+- Objetos para modelar cosas o ideas
+- Objetos y clases
+- Herencia
+- Clases abstractas
+- Encapsulamiento
+- Modificadores de acceso
+- Interfaz
+- Polimorfismo
+- Estaticos
+
+Diseño orientado a objetos
+- conceptos, tecnicas y principios que nos ayudan a tener un software que solucione problemas
+- Abstraccion
+- Cohesion
+- Aclopamiento
+- Requerimientos funcionales
+- Requerimientos no funcionales
+- Softwares de N-capas
+- Principios SOLID
+
+SOLID
+- Principio de Responsabilidad unica
+- Principio abierto cerrado
+- Principio de Sustitucion de Liskov
+- Principio de segregacion de interfaces
+- Principio de inversion de dependencias
+
+Requerimientos funcionales
+- Caracteristicas que se desea que tenga el producto
+- Describe lo que el software debe de hacer
+
+Rendimiento
+- Eficiencia
+
+Probabilidad
+- Capacidad de realizar pruebas automaticas
+
+Reusabilidad
+- Capacidad para utilizar caracteristicas ya existentes
+
+Flexibilidad
+- Facilidad de nuestro software de intercambiar funcionalidad en nuestra aplicacion
+
+Mantenibilidad
+- Facilidad para modificar 
+
+Optimización Prematura
+- Sobreingenieria: complejidades agregadas que no aportan nada a los requisitos funcionales
+- ¿Cual es el aporte que le da esto al proyecto?
+- Sigue buenas practicas. Inyeccion de dependencias.

@@ -1,0 +1,11 @@
+Fundamentos de C#
+- Propiedades y campos
+- Tipos de valor y referencia
+- Constructores
+- Signaturas y Sobrecargas
+- Interfaces
+- Clases estaticas
+- Metodos de extension
+
+
+- ref -> Pasar el parametro por referencia
