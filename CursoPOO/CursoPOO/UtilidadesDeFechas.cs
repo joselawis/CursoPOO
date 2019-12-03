@@ -51,4 +51,14 @@ namespace Modulo2
             return resultado;
         }
     }
+
+    public static class Stream
+    {
+        public static IEnumerable<char> getVocals(this string word)
+        {
+            string vocales = "aeiou";
+            return word.Where(x => vocales.Contains(x))
+                .Select(x => x);
+        }
+    }
 }
