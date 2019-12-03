@@ -23,6 +23,7 @@ namespace Modulo2
             int numero = 5;
             Aumentar(ref numero);
             Console.WriteLine(numero);
+
         }
 
         // Se pasa por parametro la referencia del objeto persona
@@ -40,6 +41,20 @@ namespace Modulo2
 
     public class Persona
     {
+        // Constructor por defecto
+        public Persona()
+        {
+            Telefonos = new List<string>();
+            Console.WriteLine("Constructor persona");
+        }
+
+        // : this() indica que se tiene que ejecutar el constructor por defecto
+        public Persona(string nombre, decimal salarioMensual) : this()
+        {
+            Nombre = nombre;
+            SalarioMensual = salarioMensual;
+        }
+
         // Propiedad autoimplementada
         public string Nombre { get; set; }
         public decimal SalarioMensual { get; set; }
@@ -48,5 +63,6 @@ namespace Modulo2
                 return SalarioMensual * 12;
             }
         }
+        public List<string> Telefonos { get; set; }
     }
 }
