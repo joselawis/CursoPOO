@@ -60,5 +60,15 @@ namespace Modulo2
             return word.Where(x => vocales.Contains(x))
                 .Select(x => x);
         }
+
+        public static IEnumerable<char> Invertir (this IEnumerable<char> wordEnumerable)
+        {
+            return wordEnumerable.Reverse().Concat("Invertido");
+        }
+
+        public static string ToArrayString(this IEnumerable<char> charSequence)
+        {
+            return new String(charSequence.ToArray());
+        }
     }
 }

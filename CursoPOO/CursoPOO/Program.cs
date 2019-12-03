@@ -32,7 +32,7 @@ namespace Modulo2
 
             string nombre = "grande";
             Console.WriteLine(nombre.ContarVocales());
-            nombre.getVocals().ToList().ForEach(x => Console.WriteLine(x.ToString()));
+            Console.WriteLine(nombre.getVocals().Invertir().ToArrayString());
         }
 
         public static void ProcesarRepositorio(IRepositorioPersonas repositorio)
