@@ -24,6 +24,29 @@ namespace Modulo2
             Aumentar(ref numero);
             Console.WriteLine(numero);
 
+            // Polimorfismo
+            IRepositorioPersonas repositorio = ObtenerRepositorio(TipoRepositorio.Memoria);
+            ProcesarRepositorio(repositorio);
+            //ProcesarRepositorio(new RepositorioPersonasBD());
+            //ProcesarRepositorio(new RepositorioPersonasEnMemoria());
+
+        }
+
+        public static void ProcesarRepositorio(IRepositorioPersonas repositorio)
+        {
+            repositorio.ObtenerPersonas();
+        }
+
+        enum TipoRepositorio { Memoria=1, BD=2}
+
+        static IRepositorioPersonas ObtenerRepositorio(TipoRepositorio tipoRepositorio)
+        {
+            switch(tipoRepositorio)
+            {
+                case TipoRepositorio.Memoria: return new RepositorioPersonasEnMemoria();
+                case TipoRepositorio.BD: return new RepositorioPersonasBD();
+                default: throw new NotImplementedException();
+            };
         }
 
         // Se pasa por parametro la referencia del objeto persona
