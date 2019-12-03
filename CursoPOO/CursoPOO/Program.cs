@@ -30,6 +30,8 @@ namespace Modulo2
             //ProcesarRepositorio(new RepositorioPersonasBD());
             //ProcesarRepositorio(new RepositorioPersonasEnMemoria());
 
+            string nombre = "grande";
+            Console.WriteLine(nombre.ContarVocales());
         }
 
         public static void ProcesarRepositorio(IRepositorioPersonas repositorio)
@@ -102,7 +104,9 @@ namespace Modulo2
         public DateTime FechaNacimiento { get; set; }
         public int Edad {
             get {
-                return UtilidadesDeFechas.CalcularEdad(FechaNacimiento);
+                // Metodo de Extension
+                return FechaNacimiento.CalcularEdad("parametro");
+                //return UtilidadesDeFechas.CalcularEdad(FechaNacimiento);
             }
         }
     }
