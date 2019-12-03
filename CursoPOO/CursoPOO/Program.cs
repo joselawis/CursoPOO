@@ -98,5 +98,12 @@ namespace Modulo2
         {
 
         }
+
+        public DateTime FechaNacimiento { get; set; }
+        public int Edad {
+            get {
+                return UtilidadesDeFechas.CalcularEdad(FechaNacimiento);
+            }
+        }
     }
 }
