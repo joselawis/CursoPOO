@@ -64,5 +64,16 @@ namespace Modulo2
             }
         }
         public List<string> Telefonos { get; set; }
+
+        // Sobrecarga de metodos
+        public void Hablar()
+        {
+
+        }
+
+        public void Hablar(string mensaje)
+        {
+
+        }
     }
 }
