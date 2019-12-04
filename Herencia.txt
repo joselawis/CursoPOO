@@ -1,0 +1,22 @@
+Introduccion a la Herencia
+- Mecanimos con el cual podemos contruir una clases a partir de otra compartiendo codigo entre clases
+- public class Hija : Padre
+- La Herencia permite reutilizar codigo 
+- Nos permite programar contra interfaces
+- Polimorfismo
+
+
+
+
+Clases Abstractas
+
+
+
+
+Metodos virtuales
+
+
+
+Constructores y Herencia
+
+

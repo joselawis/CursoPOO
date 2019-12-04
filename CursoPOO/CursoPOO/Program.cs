@@ -8,7 +8,12 @@ namespace Modulo2
 {
     class Program
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
+        {
+            Seccion1();
+            Seccion2();
+        }*/
+        public static void Seccion1()
         {
             Persona persona1 = new Persona();
             persona1.Nombre = "Felipe";
@@ -23,7 +28,10 @@ namespace Modulo2
             int numero = 5;
             Aumentar(ref numero);
             Console.WriteLine(numero);
+        }
 
+        public static void Seccion2()
+        {
             // Polimorfismo
             IRepositorioPersonas repositorio = ObtenerRepositorio(TipoRepositorio.Memoria);
             ProcesarRepositorio(repositorio);

@@ -63,7 +63,7 @@ namespace Modulo2
 
         public static IEnumerable<char> Invertir (this IEnumerable<char> wordEnumerable)
         {
-            return wordEnumerable.Reverse().Concat("Invertido");
+            return wordEnumerable.Reverse();
         }
 
         public static string ToArrayString(this IEnumerable<char> charSequence)
