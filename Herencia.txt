@@ -15,5 +15,6 @@ Metodos virtuales
 
 
 Constructores y Herencia
-
+- Los constructores de los padres se ejecutan antes que el del hijo
+- Para definir un constructor padre concreto hay que indicarlo con base
 

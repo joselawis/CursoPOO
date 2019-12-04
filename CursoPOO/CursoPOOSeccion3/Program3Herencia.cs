@@ -10,7 +10,7 @@ namespace CursoPOOSeccion3
     {
         static void Main(String[] args)
         {
-            ejemplo3Virtual();
+            ejemplo4Constructor();
         }
 
         private static void ejemplo1Herencia()
@@ -34,6 +34,11 @@ namespace CursoPOOSeccion3
             ProcesarAnimal(new Tortuga());
         }
 
+        private static void ejemplo4Constructor()
+        {
+            // Por defecto se ejecuta el constructor default del padre y despues el del hijo
+            Animal perro = new Perro("Thor");
+        }
         // Utilizamos el polimorfismo para lanzar un metodo abstracto heredado y se ejecuta en funcion del tipo concreto
         static void ProcesarAnimal(Animal animal)
         {

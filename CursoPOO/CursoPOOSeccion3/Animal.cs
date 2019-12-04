@@ -8,6 +8,16 @@ namespace CursoPOOSeccion3
 {
     public abstract class Animal
     {
+        public Animal()
+        {
+            Console.WriteLine("Instancio un animal");
+        }
+
+        public Animal(string name)
+        {
+            Console.WriteLine($"Instancio un animal de nombre {name}");
+        }
+
         public virtual void HacerRuido()
         {
             Console.WriteLine("Hacer ruido generico");
@@ -16,6 +26,17 @@ namespace CursoPOOSeccion3
 
     public class Perro : Animal
     {
+        public Perro()
+        {
+            Console.WriteLine("Instancio un perro");
+        }
+
+        // Si queremos ejecutar un constructor del padre concreto hay que indicarlo con base
+        public Perro(string name): base(name)
+        {
+            Console.WriteLine($"Instancio un perro de nombre {name}");
+        }
+
         public override void HacerRuido()
         {
             Console.WriteLine("Guau!!!!");
