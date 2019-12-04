@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Modulo2
+namespace CursoPOOSeccion2
 {
     /*
      * Cuando se debe usar una clase estatica?

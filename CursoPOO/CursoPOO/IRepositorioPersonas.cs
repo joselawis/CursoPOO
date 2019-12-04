@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Modulo2
+namespace CursoPOOSeccion2
 {
     interface IRepositorioPersonas
     {

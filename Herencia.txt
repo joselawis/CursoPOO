@@ -5,11 +5,9 @@ Introduccion a la Herencia
 - Nos permite programar contra interfaces
 - Polimorfismo
 
-
-
-
 Clases Abstractas
-
+- Clase que no puede ser instanciada y su proposito es servir de clase base para otras clases
+- public abstract class Animal
 
 
 

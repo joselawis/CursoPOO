@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Modulo2
+namespace CursoPOOSeccion2
 {
     class Program
     {
-        /*static void Main(string[] args)
+        static void Main(string[] args)
         {
             Seccion1();
             Seccion2();
-        }*/
+        }
+
         public static void Seccion1()
         {
             Persona persona1 = new Persona();
