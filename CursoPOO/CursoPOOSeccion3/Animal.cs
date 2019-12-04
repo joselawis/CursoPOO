@@ -8,7 +8,10 @@ namespace CursoPOOSeccion3
 {
     public abstract class Animal
     {
-        public abstract void HacerRuido();
+        public virtual void HacerRuido()
+        {
+            Console.WriteLine("Hacer ruido generico");
+        }
     }
 
     public class Perro : Animal
@@ -25,5 +28,10 @@ namespace CursoPOOSeccion3
         {
             Console.WriteLine("Miau!!!!");
         }
+    }
+
+    public class Tortuga: Animal
+    {
+        // Al no sobreescribir el metodo virtual HacerRuido se ejecutara el default
     }
 }

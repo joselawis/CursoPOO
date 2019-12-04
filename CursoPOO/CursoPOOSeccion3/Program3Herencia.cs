@@ -10,7 +10,7 @@ namespace CursoPOOSeccion3
     {
         static void Main(String[] args)
         {
-            ejemplo2Abstract();
+            ejemplo3Virtual();
         }
 
         private static void ejemplo1Herencia()
@@ -30,8 +30,10 @@ namespace CursoPOOSeccion3
         
         private static void ejemplo3Virtual()
         {
-
+            ProcesarAnimal(new Perro());
+            ProcesarAnimal(new Tortuga());
         }
+
         // Utilizamos el polimorfismo para lanzar un metodo abstracto heredado y se ejecuta en funcion del tipo concreto
         static void ProcesarAnimal(Animal animal)
         {

@@ -8,11 +8,10 @@ Introduccion a la Herencia
 Clases Abstractas
 - Clase que no puede ser instanciada y su proposito es servir de clase base para otras clases
 - public abstract class Animal
-
-
+- Ayuda al poliformismo ya que nos permite ejecutar metodos con distintas funcionalidades en funcion de que tipo sea.
 
 Metodos virtuales
-
+- Estos metodos tienen una implementacion default que puede ser sobreescrita
 
 
 Constructores y Herencia
