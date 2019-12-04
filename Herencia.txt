@@ -13,8 +13,13 @@ Clases Abstractas
 Metodos virtuales
 - Estos metodos tienen una implementacion default que puede ser sobreescrita
 
-
 Constructores y Herencia
 - Los constructores de los padres se ejecutan antes que el del hijo
 - Para definir un constructor padre concreto hay que indicarlo con base
 
+Diferencias entre Clases abstract e interfaces
+- Las Clases abstractas no pueden ser instanciadas, contienen propiedades y metodos que pueden o no tener implementacion.
+- Las Interfaces solo contienen la firma de los metodos los cuales hay que implementar.
+- Diferencias antes de C#:
+	- Los abstract pueden ofrecer implementacion por defecto, pueden definir atributos, pueden utilizar el modificador de acceso protected
+	

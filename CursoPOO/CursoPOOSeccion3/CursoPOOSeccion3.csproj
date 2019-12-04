@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Animal.cs" />
     <Compile Include="Entidad.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="Program3Herencia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

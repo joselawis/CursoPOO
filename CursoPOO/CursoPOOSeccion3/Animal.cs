@@ -22,6 +22,12 @@ namespace CursoPOOSeccion3
         {
             Console.WriteLine("Hacer ruido generico");
         }
+
+        // Utilizamos el polimorfismo para lanzar un metodo abstracto heredado y se ejecuta en funcion del tipo concreto
+        public static void ProcesarAnimal(Animal animal)
+        {
+            animal.HacerRuido();
+        }
     }
 
     public class Perro : Animal

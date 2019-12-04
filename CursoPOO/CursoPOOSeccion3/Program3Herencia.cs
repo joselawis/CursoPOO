@@ -10,7 +10,7 @@ namespace CursoPOOSeccion3
     {
         static void Main(String[] args)
         {
-            ejemplo4Constructor();
+            ejemplo5();
         }
 
         private static void ejemplo1Herencia()
@@ -24,14 +24,14 @@ namespace CursoPOOSeccion3
         private static void ejemplo2Abstract()
         {
             Animal perro = new Perro();
-            ProcesarAnimal(perro);
-            ProcesarAnimal(new Gato());
+            Animal.ProcesarAnimal(perro);
+            Animal.ProcesarAnimal(new Gato());
         }
         
         private static void ejemplo3Virtual()
         {
-            ProcesarAnimal(new Perro());
-            ProcesarAnimal(new Tortuga());
+            Animal.ProcesarAnimal(new Perro());
+            Animal.ProcesarAnimal(new Tortuga());
         }
 
         private static void ejemplo4Constructor()
@@ -39,10 +39,11 @@ namespace CursoPOOSeccion3
             // Por defecto se ejecuta el constructor default del padre y despues el del hijo
             Animal perro = new Perro("Thor");
         }
-        // Utilizamos el polimorfismo para lanzar un metodo abstracto heredado y se ejecuta en funcion del tipo concreto
-        static void ProcesarAnimal(Animal animal)
+        
+        private static void ejemplo5()
         {
-            animal.HacerRuido();
-        }
+            LoggerBase.ProbarLogger(new LoggerConsola());
+            LoggerBase.ProbarLogger(new LoggerArchivo());
+        }        
     }
 }
