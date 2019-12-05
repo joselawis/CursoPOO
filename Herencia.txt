@@ -22,4 +22,4 @@ Diferencias entre Clases abstract e interfaces
 - Las Interfaces solo contienen la firma de los metodos los cuales hay que implementar.
 - Diferencias antes de C#:
 	- Los abstract pueden ofrecer implementacion por defecto, pueden definir atributos, pueden utilizar el modificador de acceso protected
-	
+

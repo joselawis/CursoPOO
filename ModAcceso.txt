@@ -1,0 +1,6 @@
+PUBLIC --> Acceso total
+PRIVATE --> Acceso solo desde la misma clase
+PROTECTED --> Acceso solo desde la misma clase y aquellas que heredan de ella (desde cualquier proyecto)
+INTERNAL --> Acceso solo desde las clases del mismo proyecto
+PROTECTED INTERNAL --> Acceso solo desde la misma clase y aquellas que heredan de ella (desde cualquier proyecto) y tambien desde las otras clases del proyecto
+PRIVATE PROTECTED --> Acceso solo desde la misma clase y aquellas que heredan de ella en el proyecto que se encuentre
