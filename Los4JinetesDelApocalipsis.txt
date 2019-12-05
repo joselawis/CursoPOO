@@ -1,0 +1,10 @@
+HERENCIA -> Mecanimos con el cual podemos contruir una clases a partir de otra compartiendo codigo entre clases
+ABSTRACCION -> Idea de simplificar las cosas, evitar aquello que no aporta al software o al cliente
+	- Es una tecnica mediante la cual ignoramos las cosas que no son relevantes, y nos enfocamos en lo que nos agrega valor en nuestro contexto
+	- Principio YAGNI: NO INCLUYAS MIERDAS QUE NO VAYAS A NECESITAR
+ENCAPSULAMIENTO -> Esconder los detalles de la implementacion de nuestro software
+	- Modificadores de acceso
+	- Escondemos aquello que no sea necesario fuera de la clase
+	- Tener miembros privados en una clase ayuda a su evolucionabilidad, ya que si queremos cambiar los detalles privados no afecta al cliente
+	- Nos permite tratar las clases como cajas negras
+POLIMORFISMO -> Programar contra abstracciones, nos permite intercambiar las implementaciones de las dependencias de nuestras clases
